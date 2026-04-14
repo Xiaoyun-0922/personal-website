@@ -96,3 +96,29 @@
     background: radial-gradient(circle, rgba(232, 195, 158, 0.03) 0%, rgba(18,18,18,0) 60%);
   }
 }
+
+/* ===== Mobile responsive ===== */
+@media (max-width: 768px) {
+  .visionSection {
+    padding: 4rem 0;
+  }
+
+  .title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .textBlock {
+    font-size: 1.05rem;
+    padding-left: 1rem;
+  }
+
+  .textStack {
+    margin-bottom: 2.5rem;
+  }
+
+  .quoteCard {
+    font-size: 1.15rem;
+    padding: 2rem 1.5rem;
+  }
+}

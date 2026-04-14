@@ -73,3 +73,30 @@
   color: var(--text-secondary);
   letter-spacing: 0.05em;
 }
+
+/* ===== Mobile responsive ===== */
+@media (max-width: 768px) {
+  .videoSection {
+    padding: 4rem 0 2rem;
+  }
+
+  .header {
+    margin-bottom: 2.5rem;
+  }
+
+  .sectionTitle {
+    font-size: 1.75rem;
+  }
+
+  .placeholderText {
+    font-size: 1rem;
+  }
+
+  .playIcon {
+    font-size: 2.5rem;
+  }
+
+  .videoPlaceholder:hover {
+    transform: none;
+  }
+}

@@ -144,3 +144,35 @@
   color: var(--text-secondary);
   font-weight: 500;
 }
+
+/* ===== Mobile responsive ===== */
+@media (max-width: 768px) {
+  .pubSection {
+    padding: 4rem 0;
+  }
+
+  .header {
+    margin-bottom: 2.5rem;
+  }
+
+  .sectionTitle {
+    font-size: 1.75rem;
+  }
+
+  .pubCard {
+    padding: 1.5rem;
+  }
+
+  .pubTitle {
+    font-size: 1.05rem;
+  }
+
+  .pubMeta {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .pubHeader {
+    flex-wrap: wrap;
+  }
+}

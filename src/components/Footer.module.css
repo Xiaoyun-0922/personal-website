@@ -68,3 +68,26 @@
   color: var(--text-secondary);
   font-size: 0.85rem;
 }
+
+/* ===== Mobile responsive ===== */
+@media (max-width: 768px) {
+  .footerContainer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .footerContent {
+    max-width: 100%;
+  }
+
+  .footerLinks {
+    gap: 1.5rem;
+  }
+
+  .footer {
+    padding-top: 2.5rem;
+  }
+}

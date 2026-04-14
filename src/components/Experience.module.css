@@ -250,3 +250,61 @@
   margin-top: auto;
   opacity: 0.7;
 }
+
+/* ===== Mobile responsive ===== */
+@media (max-width: 768px) {
+  .experienceSection {
+    padding: 4rem 0;
+  }
+
+  .sectionTitle {
+    font-size: 1.75rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .timelineItem {
+    width: 100% !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .innerCard {
+    padding: 1.5rem;
+  }
+
+  .expTitle {
+    font-size: 1.25rem;
+  }
+
+  .expMeta {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .projectsGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .subSectionTitle {
+    font-size: 1.5rem;
+    margin: 3rem 0 2rem;
+  }
+
+  .lightboxContent {
+    width: 95vw;
+    height: 80vh;
+  }
+}
+
+@media (max-width: 480px) {
+  .projectsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .expMeta {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+

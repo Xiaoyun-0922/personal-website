@@ -160,3 +160,49 @@
   border-color: var(--text-secondary);
   transform: translateY(-2px);
 }
+
+/* ===== Mobile responsive ===== */
+@media (max-width: 768px) {
+  .heroSection {
+    padding-top: 4rem;
+    min-height: auto;
+    padding-bottom: 4rem;
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .subtitle {
+    font-size: 1.05rem;
+  }
+
+  .description {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .actions {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .primaryButton, .secondaryButton {
+    text-align: center;
+    width: 100%;
+    padding: 0.75rem 1.5rem;
+    font-size: 0.95rem;
+  }
+
+  .awardsGroup {
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 2rem;
+  }
+}

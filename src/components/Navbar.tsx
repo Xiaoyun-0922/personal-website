@@ -5,6 +5,7 @@ import { useLanguage } from '@/context/LanguageContext';
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
   const { language, t, toggleLanguage } = useLanguage();
 
   useEffect(() => {
@@ -15,6 +16,10 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const handleLinkClick = () => {
+    setMenuOpen(false);
+  };
+
   return (
     <header className={`${styles.navbar} ${scrolled ? styles.scrolled : ''}`}>
       <div className={`container ${styles.navContainer}`}>
@@ -22,13 +27,24 @@ export default function Navbar() {
           <span className={styles.logoName}>Xiaoyun Liu</span>
           <span className={styles.logoDot}>.</span>
         </a>
-        <nav className={styles.navLinks}>
-          <a href="#about" className={styles.navLink}>{t.nav.about}</a>
-          <a href="#experience" className={styles.navLink}>{t.nav.experience}</a>
-          <a href="#competitions" className={styles.navLink}>{t.nav.competitions}</a>
-          <a href="#vision" className={styles.navLink}>{t.nav.vision}</a>
+
+        <button
+          className={`${styles.hamburger} ${menuOpen ? styles.hamburgerOpen : ''}`}
+          onClick={() => setMenuOpen(!menuOpen)}
+          aria-label="Toggle menu"
+        >
+          <span />
+          <span />
+          <span />
+        </button>
+
+        <nav className={`${styles.navLinks} ${menuOpen ? styles.navLinksOpen : ''}`}>
+          <a href="#about" className={styles.navLink} onClick={handleLinkClick}>{t.nav.about}</a>
+          <a href="#experience" className={styles.navLink} onClick={handleLinkClick}>{t.nav.experience}</a>
+          <a href="#competitions" className={styles.navLink} onClick={handleLinkClick}>{t.nav.competitions}</a>
+          <a href="#vision" className={styles.navLink} onClick={handleLinkClick}>{t.nav.vision}</a>
           
-          <button onClick={toggleLanguage} className={styles.langToggle}>
+          <button onClick={() => { toggleLanguage(); handleLinkClick(); }} className={styles.langToggle}>
              {language === 'en' ? '中' : 'EN'}
           </button>
         </nav>
