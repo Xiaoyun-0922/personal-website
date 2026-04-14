@@ -14,8 +14,10 @@ export default function Experience() {
     <section id="experience" className={styles.experienceSection}>
       <div className={`container ${styles.expContainer}`}>
         <h2 className={`${styles.sectionTitle} animate-fade-in`}>{t.experience.title}</h2>
+
+        {/* Completed / Patent items */}
         <div className={styles.timeline}>
-          {experiences.map((exp, index) => (
+          {experiences.slice(0, 2).map((exp, index) => (
             <div key={index} className={`${styles.timelineItem} animate-fade-in delay-${(index + 1) * 100}`}>
               <div className={`${styles.innerCard} glass-panel`}>
                 <div className={styles.timelineContent}>
@@ -43,6 +45,32 @@ export default function Experience() {
                     />
                   </div>
                 )}
+              </div>
+            </div>
+          </div>
+          ))}
+        </div>
+
+        {/* Ongoing Research divider */}
+        <h3 className={`${styles.subSectionTitle} animate-fade-in`}>{(t.experience as any).ongoingTitle}</h3>
+
+        {/* Ongoing items */}
+        <div className={styles.timeline}>
+          {experiences.slice(2).map((exp, index) => (
+            <div key={index} className={`${styles.timelineItem} animate-fade-in delay-100`}>
+              <div className={`${styles.innerCard} glass-panel`}>
+                <div className={styles.timelineContent}>
+                <h3 className={styles.expTitle}>{exp.title}</h3>
+                <div className={styles.expMeta}>
+                  <span className={styles.company}>{exp.company}</span>
+                  <span className={styles.date}>{exp.date}</span>
+                </div>
+                <p className={styles.expDesc}>{exp.description}</p>
+                <div className={styles.tagsGroup}>
+                  {exp.tags.map((tag, tagIndex) => (
+                    <span key={tagIndex} className={styles.tag}>{tag}</span>
+                  ))}
+                </div>
 
                 {/* Sub-item rendered inside the same card */}
                 {(exp as any).subItem && (

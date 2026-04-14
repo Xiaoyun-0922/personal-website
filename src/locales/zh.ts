@@ -13,7 +13,7 @@ export const zh: Translations = {
     name: '刘小允',
     university: '数学与应用数学专业 · 中国海洋大学 (2023级)',
     description: '致力于数学理论指导模型算法优化。基于严格的数学推演深入实践与优化 LLM 训练全流程（含预训练、后训练、科研用 Agent 架构设计），并拥有丰富的深度学习跨学科交叉应用落地经验。我坚信计算科学与数学基础的结合将不断拓宽智能系统的边界，致力于用技术解码复杂世界并实现前沿理论的工程化落地。',
-    btnPrimary: '探索我的研究',
+    btnPrimary: '个人研究',
     btnSecondary: 'GitHub 主页',
     award1: 'iGEM 国际基因工程机器大赛银奖',
     award2: 'ASC 世界大学生超算竞赛二等奖',
@@ -44,6 +44,7 @@ export const zh: Translations = {
   experience: {
     title: '科研与项目经历',
     projectsTitle: '个人其他科研和项目',
+    ongoingTitle: '进行中的研究',
     items: [
       {
         title: "AI 与地球动力学算法研究",
@@ -69,7 +70,7 @@ export const zh: Translations = {
         tags: ["视觉模型", "从头预训练", "LaTeX", "文档 AI"],
         subItem: {
           title: "后训练算法改进",
-          company: "进行中工作",
+          company: "科研项目",
           date: "进行中",
           description: "专注于提升小尺寸语言模型的数学逻辑推导表现。探索基于 PPO/DPO 的强化学习对齐 (RLHF) 技术及高质量推理轨迹构建，定向增强模型在复杂数学问题上的多步推理能力，实现特定垂直场景下的表现越级。",
           tags: ["大语言模型", "后训练", "数学推理"]
