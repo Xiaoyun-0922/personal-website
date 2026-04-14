@@ -10,7 +10,7 @@ export const en = {
     greeting: "Hello, I'm ",
     name: 'Xiaoyun Liu',
     university: 'Mathematics & Applied Mathematics · Ocean University of China (Class of 2023)',
-    description: 'Dedicated to artificial intelligence research, with a deep focus on LLM pre-training and post-training methodologies, Agent architecture design, and the intersection of bioinformatics and deep learning. Grounded in a rigorous foundation of theoretical mathematics, I believe the synergy of mathematical reasoning and computational science will continuously expand the boundaries of intelligent systems. For me, exploring artificial intelligence is not just a beloved research career, but a lifelong mission to decode complex worlds through reason and technology.',
+    description: 'Dedicated to optimizing model algorithms through mathematical theory. Grounded in rigorous mathematical reasoning, I deeply engage in and optimize the entire LLM training pipeline (including pre-training, post-training, and research-oriented Agent architecture design), with extensive experience in interdisciplinary applications of deep learning. I believe the synergy of computational science and mathematical foundations will continuously expand the boundaries of intelligent systems, driving the engineering implementation of cutting-edge theories.',
     btnPrimary: 'Explore My Work',
     btnSecondary: 'GitHub',
     award1: 'iGEM Silver Medalist',
@@ -55,7 +55,7 @@ export const en = {
         title: "Literature Automation Agent Developer",
         company: "Qingdong Xiamen Business Consulting Co., Ltd.",
         date: "Past Experience",
-        description: "Developed automated literature typesetting and formatting agents for enterprise use, streamlining workflow efficiency.",
+        description: "Developed an automated literature typesetting and formatting agent for enterprise use. The automated pipeline saved approximately 1 person-day of workload per paper and significantly reduced formatting errors caused by manual operations by about 35%, drastically improving delivery efficiency.",
         tags: ["LLM Agents", "Automation", "Enterprise Solutions"],
         image: "/latex_agent.png"
       },
@@ -63,13 +63,13 @@ export const en = {
         title: "PDF to LaTeX Visual Model Pre-training",
         company: "Research Project",
         date: "Ongoing",
-        description: "Independently designing and pre-training a novel architecture from scratch for converting PDF documents to LaTeX format, targeting high-fidelity extraction of scientific formulas and layout structures.",
+        description: "Independently designed and optimized the multimodal data pipeline, pre-training a specialized vision model from scratch for PDF-to-LaTeX conversion. Specifically addresses formula distortion during complex mathematics extraction, overcoming the engineering pain points of slow parsing and poor layout fidelity found in traditional tools.",
         tags: ["Vision Models", "Pre-training", "LaTeX", "Document AI"],
         subItem: {
           title: "Post-training Algorithm Improvement",
-          company: "Research Project",
+          company: "Ongoing Work",
           date: "Ongoing",
-          description: "Investigating post-training methodologies to address the limitations of small language models in mathematical reasoning, exploring alignment and reinforcement learning techniques.",
+          description: "Focusing on improving the mathematical reasoning capabilities of small-scale language models. Exploring RLHF alignment techniques (PPO/DPO) and high-quality reasoning trajectory construction to directionally enhance multi-step reasoning capabilities for complex mathematical problems, achieving superior performance in specific vertical domains.",
           tags: ["LLM", "Post-training", "Math Reasoning"]
         }
       }

@@ -2,11 +2,13 @@
 import styles from './Experience.module.css';
 import { useLanguage } from '@/context/LanguageContext';
 import Image from 'next/image';
+import { useState } from 'react';
 
 export default function Experience() {
   const { t } = useLanguage();
   const experiences = t.experience.items;
   const personalProjects = t.experience.personalProjects;
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   return (
     <section id="experience" className={styles.experienceSection}>
@@ -30,7 +32,7 @@ export default function Experience() {
                 </div>
                 
                 {exp.image && (
-                  <div className={styles.imageWrapper}>
+                  <div className={styles.imageWrapper} onClick={() => setSelectedImage(exp.image)}>
                     <Image
                       src={exp.image}
                       alt={exp.title}
@@ -92,6 +94,20 @@ export default function Experience() {
            })}
         </div>
       </div>
+
+      {selectedImage && (
+        <div className={styles.lightbox} onClick={() => setSelectedImage(null)}>
+          <div className={styles.lightboxContent}>
+            <Image 
+              src={selectedImage} 
+              alt="Expanded view" 
+              fill 
+              style={{ objectFit: 'contain' }} 
+              unoptimized={true} 
+            />
+          </div>
+        </div>
+      )}
     </section>
   );
 }
