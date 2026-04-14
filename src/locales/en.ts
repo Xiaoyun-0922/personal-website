@@ -1,0 +1,173 @@
+export const en = {
+  nav: {
+    about: 'About',
+    experience: 'Experience',
+    competitions: 'Competitions',
+    vision: 'Vision',
+  },
+  hero: {
+    badge: 'AI Researcher & Developer',
+    greeting: "Hello, I'm ",
+    name: 'Xiaoyun Liu',
+    university: 'Mathematics & Applied Mathematics · Ocean University of China (Class of 2023)',
+    description: 'Dedicated to artificial intelligence research, with a deep focus on LLM pre-training and post-training methodologies, Agent architecture design, and the intersection of bioinformatics and deep learning. Grounded in a rigorous foundation of theoretical mathematics, I believe the synergy of mathematical reasoning and computational science will continuously expand the boundaries of intelligent systems. For me, exploring artificial intelligence is not just a beloved research career, but a lifelong mission to decode complex worlds through reason and technology.',
+    btnPrimary: 'Explore My Work',
+    btnSecondary: 'GitHub',
+    award1: 'iGEM Silver Medalist',
+    award2: 'ASC Supercomputer Challenge 2nd Prize',
+    email: 'liuxy@stu.ouc.edu.cn'
+  },
+  skills: {
+    title: 'Core Expertise',
+    subtitle: 'Technical stack and domain knowledge driving my research and development.',
+    categories: [
+      {
+        name: 'AI & Deep Learning',
+        items: ['PyTorch', 'HuggingFace', 'LLM Pre-training', 'RLHF / Alignment', 'Computer Vision (YOLO)']
+      },
+      {
+        name: 'High Performance Computing',
+        items: ['CUDA', 'Parallel Computing', 'Cluster Deployment', 'Power Optimization', 'Embodied AI']
+      },
+      {
+        name: 'Bioinformatics & Science',
+        items: ['Metagenomics Pipeline', 'Molecular Dynamics', 'PDE Modeling', 'Geodynamics Simulation']
+      },
+      {
+        name: 'Development & Engineering',
+        items: ['Python', 'TypeScript', 'Next.js', 'Agent Architecture', 'Linux / Git']
+      }
+    ]
+  },
+  experience: {
+    title: 'Research & Projects',
+    projectsTitle: 'Other Research & Projects',
+    items: [
+      {
+        title: "AI & Geodynamics Researcher",
+        company: "Research Project",
+        date: "Patents Under Review",
+        description: "Developing intelligent agents for geodynamic simulation anomaly detection and archiving. Co-authoring two patents integrating geoscience with AI.",
+        tags: ["Agents", "Geodynamics", "Anomaly Detection", "AI Research"],
+        image: "/geodynamics_patent.png"
+      },
+      {
+        title: "Literature Automation Agent Developer",
+        company: "Qingdong Xiamen Business Consulting Co., Ltd.",
+        date: "Past Experience",
+        description: "Developed automated literature typesetting and formatting agents for enterprise use, streamlining workflow efficiency.",
+        tags: ["LLM Agents", "Automation", "Enterprise Solutions"],
+        image: "/latex_agent.png"
+      },
+      {
+        title: "PDF to LaTeX Visual Model Pre-training",
+        company: "Research Project",
+        date: "Ongoing",
+        description: "Independently designing and pre-training a novel architecture from scratch for converting PDF documents to LaTeX format, targeting high-fidelity extraction of scientific formulas and layout structures.",
+        tags: ["Vision Models", "Pre-training", "LaTeX", "Document AI"],
+        subItem: {
+          title: "Post-training Algorithm Improvement",
+          company: "Research Project",
+          date: "Ongoing",
+          description: "Investigating post-training methodologies to address the limitations of small language models in mathematical reasoning, exploring alignment and reinforcement learning techniques.",
+          tags: ["LLM", "Post-training", "Math Reasoning"]
+        }
+      }
+    ],
+    personalProjects: [
+      {
+        title: "Functional Analysis Solver & Q&A Agent",
+        desc: "An intelligent agent built for advanced mathematics context resolution.",
+        github: true
+      },
+      {
+        title: "Antimicrobial Peptide Research Agent",
+        desc: "An AI-driven agent for antimicrobial peptide screening, rearrangement, and molecular dynamics analysis.",
+        github: true
+      },
+      {
+        title: "Vocabulary Assistant",
+        desc: "A personalized assistant to help with efficient language learning and retention.",
+        github: true
+      },
+      {
+        title: "Real-time Ear Acupoint Recognition YOLO Model",
+        desc: "Applied computer vision (YOLO) for real-time medical acupoint detection.",
+        github: false
+      }
+    ],
+    closedSource: "Closed Source",
+    githubLink: "View on GitHub"
+  },
+  competitions: {
+    title: 'Global Competitions',
+    subtitle: 'Applying advanced AI and mathematical modeling to solve hard problems on the world stage.',
+    linkTextAsc: 'View Detail',
+    linkTextIgem: 'See my work',
+    items: [
+      {
+        title: "ASC Student Supercomputer Challenge",
+        award: "Second Prize",
+        year: "2026",
+        description: "Responsible for the optimization of Embodied AI algorithms. Focused extensively on optimizing the Diffusion Model and its attention mechanisms under strict power constraints on a supercomputer cluster.",
+        url: "https://www.asc-events.net/StudentChallenge/ASC26/preliminary.php",
+        skills: ["Embodied AI", "Diffusion Models", "Attention Mechanisms", "HPC Optimization"]
+      },
+      {
+        title: "International Genetically Engineered Machine (iGEM)",
+        award: "Silver Medal",
+        year: "2025",
+        description: "Led the modeling section. Responsible for antimicrobial peptide screening and rearrangement agent construction. Proposed an LLM-driven antimicrobial peptide sequence rearrangement mechanism. Conducted partial differential equation modeling for drug diffusion and molecular dynamics simulations of peptide efficacy.",
+        url: "https://2025.igem.wiki/ouc-haide/model",
+        skills: ["LLM", "PDE Modeling", "Molecular Dynamics", "Bioinformatics"]
+      }
+    ]
+  },
+  vision: {
+    title: 'My ',
+    highlight: 'Vision',
+    titleEnd: ' for AI',
+    p1: 'I have a profound connection with Artificial Intelligence. I believe that dedicating my life to advancing this field is not just a career path, but a fundamental calling.',
+    p2: 'I actively explore and learn the latest advancements, constantly seeking breakthroughs in both theoretical foundations (like mathematical analysis) and practical implementations (LLMs, Agents, and Bioinformatics applications).',
+    p3: 'My goal is to push the boundaries of what intelligent systems can achieve, creating models and agents that reason deeply, understand complex scientific domains, and ultimately contribute to human knowledge.',
+    quote: '"Seeking theoretical and practical breakthroughs in the age of intelligence."'
+  },
+  videoShowcase: {
+    title: 'Live Demonstrations',
+    subtitle: 'Geo-RAG-LLM: Answering complex geology queries using rigorous data pruning and LoRA fine-tuning.',
+    placeholder: 'Coming Soon: Geo-RAG-LLM Demo Video'
+  },
+  publications: {
+    title: 'Publications',
+    subtitle: 'Contributed to data processing, bioinformatics pipeline development, and computational modeling in the following peer-reviewed studies.',
+    items: [
+      {
+        title: 'Metagenomic analysis reveals Northwest Pacific Ocean as a reservoir and evolutionary hub of antibiotic resistance genes',
+        authors: 'Ziyi Guo, Hongyue Ma, Yaxin Liu, Jiangtao Xie, Xiaoyun Liu, Yidan Chang, Ziwei Wang, Pengfei Cui',
+        journal: 'Environmental Pollution',
+        year: '2025',
+        status: 'Published',
+        contribution: 'Responsible for metagenomic data processing, ARG annotation pipeline development, and co-occurrence network modeling.',
+        doi: 'https://doi.org/10.1016/j.envpol.2025.126938',
+        tags: ['Data Processing', 'Bioinformatics Pipeline', 'Network Modeling', 'Metagenomics']
+      },
+      {
+        title: 'Beach sand beneath our feet: an overlooked reservoir of antibiotic resistance genes and pathogens, revealed by metagenomic evidence from Qingdao\'s recreational beaches',
+        authors: 'Chenglu Li, Hongyue Ma, Yidan Chang, Hezi Ge, Xiaoyun Liu, Jiangtao Xie, He Zhang, Pengfei Cui',
+        journal: 'bioRxiv Preprint',
+        year: '2025',
+        status: 'Preprint',
+        contribution: 'Participated in metagenomic sequencing data analysis, resistance gene identification, and statistical modeling of pathogen distribution.',
+        doi: 'https://doi.org/10.1101/2025.06.25.661489',
+        tags: ['Data Analysis', 'Statistical Modeling', 'Gene Identification', 'Metagenomics']
+      }
+    ]
+  },
+  footer: {
+    tagline: 'Advancing intelligent systems through mathematics and AI.',
+    contact: 'Contact',
+    rights: 'All rights reserved.'
+  }
+};
+
+export type Translations = typeof en;

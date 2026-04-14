@@ -1,0 +1,75 @@
+.videoSection {
+  padding: 8rem 0 4rem;
+  background-color: var(--bg-primary);
+  position: relative;
+}
+
+.videoContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 4rem;
+  max-width: 800px;
+}
+
+.sectionTitle {
+  font-size: 2.5rem;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+}
+
+.sectionText {
+  color: var(--text-secondary);
+  font-size: 1.125rem;
+  line-height: 1.6;
+}
+
+.videoPlaceholder {
+  width: 100%;
+  max-width: 960px;
+  aspect-ratio: 16 / 9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, rgba(var(--bg-secondary-rgb, 255,255,255), 0.5), rgba(var(--bg-secondary-rgb, 255,255,255), 0.1));
+  border: 1px dashed var(--accent-color);
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+  transition: transform 0.4s ease;
+  cursor: pointer;
+}
+
+.videoPlaceholder:hover {
+  transform: scale(1.02);
+}
+
+.placeholderContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.playIcon {
+  font-size: 4rem;
+  color: var(--text-secondary);
+  opacity: 0.5;
+  transition: all 0.3s ease;
+}
+
+.videoPlaceholder:hover .playIcon {
+  color: var(--accent-color);
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.placeholderText {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  letter-spacing: 0.05em;
+}
