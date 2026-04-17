@@ -79,19 +79,35 @@ export const zh: Translations = {
     ],
     personalProjects: [
       {
+        title: "sshops",
+        desc: "面向 Windows 用户的 SSH 一站式运维工具包：一键引导、诊断、传输回退与远程操作，专为 Linux / HPC 工作流设计。",
+        github: true,
+        repo: "Xiaoyun-0922/sshops",
+        githubUrl: "https://github.com/Xiaoyun-0922/sshops"
+      },
+      {
         title: "泛函分析解题与问答 Agent",
         desc: "基于大模型构建的专注于高等数学问题解析的智能体。",
-        github: true
+        github: true,
+        githubUrl: "https://github.com/Xiaoyun-0922"
+      },
+      {
+        title: "Task Council",
+        desc: "本地优先的任务推理工作台：结构化记忆、阶段编排与产物驱动输出，面向科研与决策工作流。",
+        github: true,
+        githubUrl: "https://github.com/Xiaoyun-0922/task-council"
       },
       {
         title: "抗菌肽科研 Agent",
         desc: "基于 AI 驱动的抗菌肽筛选、重排与分子动力学分析智能体。",
-        github: true
+        github: true,
+        githubUrl: "https://github.com/Xiaoyun-0922"
       },
       {
         title: "背单词小助手",
         desc: "辅助高效语言学习与记忆的个人助手工具。",
-        github: true
+        github: true,
+        githubUrl: "https://github.com/Xiaoyun-0922"
       },
       {
         title: "耳穴实时识别 YOLO 模型",

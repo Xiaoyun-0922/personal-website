@@ -77,19 +77,35 @@ export const en = {
     ],
     personalProjects: [
       {
+        title: "sshops",
+        desc: "Windows-first SSH bootstrap, diagnostics, transfer fallback, and remote ops toolkit for Linux and HPC workflows.",
+        github: true,
+        repo: "Xiaoyun-0922/sshops",
+        githubUrl: "https://github.com/Xiaoyun-0922/sshops"
+      },
+      {
         title: "Functional Analysis Solver & Q&A Agent",
         desc: "An intelligent agent built for advanced mathematics context resolution.",
-        github: true
+        github: true,
+        githubUrl: "https://github.com/Xiaoyun-0922"
+      },
+      {
+        title: "Task Council",
+        desc: "A local-first task reasoning workbench for research and decision workflows, with structured memory, stage-based orchestration, and artifact-driven outputs.",
+        github: true,
+        githubUrl: "https://github.com/Xiaoyun-0922/task-council"
       },
       {
         title: "Antimicrobial Peptide Research Agent",
         desc: "An AI-driven agent for antimicrobial peptide screening, rearrangement, and molecular dynamics analysis.",
-        github: true
+        github: true,
+        githubUrl: "https://github.com/Xiaoyun-0922"
       },
       {
         title: "Vocabulary Assistant",
         desc: "A personalized assistant to help with efficient language learning and retention.",
-        github: true
+        github: true,
+        githubUrl: "https://github.com/Xiaoyun-0922"
       },
       {
         title: "Real-time Ear Acupoint Recognition YOLO Model",

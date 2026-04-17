@@ -2,13 +2,31 @@
 import styles from './Experience.module.css';
 import { useLanguage } from '@/context/LanguageContext';
 import Image from 'next/image';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 export default function Experience() {
   const { t } = useLanguage();
   const experiences = t.experience.items;
   const personalProjects = t.experience.personalProjects;
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
+  const [stars, setStars] = useState<Record<string, number>>({});
+
+  useEffect(() => {
+    const repos = personalProjects
+      .filter((p: any) => p.repo)
+      .map((p: any) => p.repo as string);
+
+    repos.forEach((repo: string) => {
+      fetch(`https://api.github.com/repos/${repo}`)
+        .then(res => res.json())
+        .then(data => {
+          if (data.stargazers_count !== undefined) {
+            setStars(prev => ({ ...prev, [repo]: data.stargazers_count }));
+          }
+        })
+        .catch(() => {});
+    });
+  }, [personalProjects]);
 
   return (
     <section id="experience" className={styles.experienceSection}>
@@ -97,10 +115,16 @@ export default function Experience() {
         
         <h3 className={`${styles.subSectionTitle} animate-fade-in delay-400`}>{t.experience.projectsTitle}</h3>
         <div className={`${styles.projectsGrid} animate-fade-in delay-500`}>
-           {personalProjects.map((proj, idx) => {
+           {personalProjects.map((proj: any, idx: number) => {
+              const repoStars = proj.repo ? stars[proj.repo] : undefined;
               const cardContent = (
                  <>
-                   <h4 className={styles.projectTitle}>{proj.title}</h4>
+                   <div className={styles.projectCardHeader}>
+                     <h4 className={styles.projectTitle}>{proj.title}</h4>
+                     {repoStars !== undefined && (
+                       <span className={styles.starBadge}>⭐ {repoStars}</span>
+                     )}
+                   </div>
                    <p className={styles.projectDesc}>{proj.desc}</p>
                    {proj.github ? (
                      <span className={styles.githubLink}>{t.experience.githubLink} &rarr;</span>
@@ -110,8 +134,10 @@ export default function Experience() {
                  </>
               );
 
+              const url = proj.githubUrl || "https://github.com/Xiaoyun-0922";
+
               return proj.github ? (
-                <a href="https://github.com/Xiaoyun-0922" target="_blank" rel="noopener noreferrer" key={idx} className={`${styles.projectCard} glass-panel`}>
+                <a href={url} target="_blank" rel="noopener noreferrer" key={idx} className={`${styles.projectCard} glass-panel`}>
                   {cardContent}
                 </a>
               ) : (
