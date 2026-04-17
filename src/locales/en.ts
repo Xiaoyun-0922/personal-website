@@ -151,8 +151,8 @@ export const en = {
   },
   videoShowcase: {
     title: 'Live Demonstrations',
-    subtitle: 'Geo-RAG-LLM: Answering complex geology queries using rigorous data pruning and LoRA fine-tuning.',
-    placeholder: 'Coming Soon: Geo-RAG-LLM Demo Video'
+    subtitle: 'A cutting-edge AI research project combining LLM post-training with formal mathematical verification (Lean 4). By utilizing Lean as a strict "lie detector," this project investigates whether reasoning capabilities acquired from simple computational problems can successfully transfer to highly abstract, rigorous mathematical proofs (e.g., Terence Tao\'s Analysis I and ProofNet). The pipeline features automated extraction of sorry placeholders, dual-GPU parallel inference, rigorous verification, and error-feedback SFT fine-tuning.',
+    placeholder: 'Coming Soon: Lean 4 + LLM Post-training Demo Video'
   },
   publications: {
     title: 'Publications',

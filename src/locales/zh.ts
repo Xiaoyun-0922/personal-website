@@ -153,8 +153,8 @@ export const zh: Translations = {
   },
   videoShowcase: {
     title: '系统演示展示',
-    subtitle: 'Geo-RAG-LLM：基于高质量数据清洗与 LoRA 微调的地质学垂类问答系统。',
-    placeholder: 'Coming Soon: Geo-RAG-LLM Demo Video'
+    subtitle: '这是一个结合了“大语言模型 (LLM) 后训练”与“形式化数学验证 (Lean 4)”的前沿 AI 科研项目。将 Lean 当作极其严格的“测谎仪”，探究大模型基于简单计算题所获取的推理能力，能否切实泛化到要求绝对严密的抽象数学证明（如陶哲轩《Analysis I》和 ProofNet 问题）中。项目涵盖从自动抽取 sorry 占位符、双卡并行推理、验证到基于错误反馈的 SFT 微调完整闭环。',
+    placeholder: 'Coming Soon: Lean 4 + LLM Post-training Demo Video'
   },
   publications: {
     title: '学术论文',
