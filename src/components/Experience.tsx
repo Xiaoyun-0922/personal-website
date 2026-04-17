@@ -122,7 +122,7 @@ export default function Experience() {
                    <div className={styles.projectCardHeader}>
                      <h4 className={styles.projectTitle}>{proj.title}</h4>
                      {repoStars !== undefined && (
-                       <span className={styles.starBadge}>⭐ {repoStars}</span>
+                       <span className={styles.starBadge}>⭐ {repoStars} GitHub Stars</span>
                      )}
                    </div>
                    <p className={styles.projectDesc}>{proj.desc}</p>
