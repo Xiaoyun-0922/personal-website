@@ -12,7 +12,7 @@ export const en = {
     university: 'Mathematics & Applied Mathematics · Ocean University of China (Class of 2023)',
     description: 'Dedicated to optimizing model algorithms through mathematical theory. Grounded in rigorous mathematical reasoning, I deeply engage in and optimize the entire LLM training pipeline (including pre-training, post-training, and research-oriented Agent architecture design), with extensive experience in interdisciplinary applications of deep learning. I believe the synergy of computational science and mathematical foundations will continuously expand the boundaries of intelligent systems, driving the engineering implementation of cutting-edge theories.',
     btnPrimary: 'My Research',
-    btnSecondary: 'GitHub',
+    btnSecondary: 'My GitHub',
     award1: 'iGEM Silver Medalist',
     award2: 'ASC Supercomputer Challenge 2nd Prize',
     email: 'liuxy@stu.ouc.edu.cn'

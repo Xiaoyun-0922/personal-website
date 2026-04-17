@@ -14,7 +14,7 @@ export const zh: Translations = {
     university: '数学与应用数学专业 · 中国海洋大学 (2023级)',
     description: '致力于数学理论指导模型算法优化。基于严格的数学推演深入实践与优化 LLM 训练全流程（含预训练、后训练、科研用 Agent 架构设计），并拥有丰富的深度学习跨学科交叉应用落地经验。我坚信计算科学与数学基础的结合将不断拓宽智能系统的边界，致力于用技术解码复杂世界并实现前沿理论的工程化落地。',
     btnPrimary: '个人研究',
-    btnSecondary: 'GitHub 主页',
+    btnSecondary: '我的 GitHub 主页',
     award1: 'iGEM 国际基因工程机器大赛银奖',
     award2: 'ASC 世界大学生超算竞赛二等奖',
     email: 'liuxy@stu.ouc.edu.cn'
