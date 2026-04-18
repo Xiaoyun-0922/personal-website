@@ -116,7 +116,7 @@ export default function Experience() {
         <h3 className={`${styles.subSectionTitle} animate-fade-in delay-400`}>{t.experience.projectsTitle}</h3>
         <div className={`${styles.projectsGrid} animate-fade-in delay-500`}>
            {personalProjects.map((proj: any, idx: number) => {
-              const repoStars = proj.repo ? stars[proj.repo] : undefined;
+              const repoStars = proj.repo && stars[proj.repo] !== undefined ? stars[proj.repo] : proj.defaultStars;
               const cardContent = (
                  <>
                    <div className={styles.projectCardHeader}>
