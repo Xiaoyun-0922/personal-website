@@ -12,21 +12,18 @@ export default function Experience() {
   const [stars, setStars] = useState<Record<string, number>>({});
 
   useEffect(() => {
-    const repos = personalProjects
-      .filter((p: any) => p.repo)
-      .map((p: any) => p.repo as string);
-
-    repos.forEach((repo: string) => {
-      fetch(`https://api.github.com/repos/${repo}`)
-        .then(res => res.json())
-        .then(data => {
-          if (data.stargazers_count !== undefined) {
-            setStars(prev => ({ ...prev, [repo]: data.stargazers_count }));
-          }
-        })
-        .catch(() => {});
-    });
-  }, [personalProjects]);
+    fetch('https://api.github.com/repos/Xiaoyun-0922/sshops')
+      .then(res => {
+        if (!res.ok) throw new Error('rate limited');
+        return res.json();
+      })
+      .then(data => {
+        if (typeof data.stargazers_count === 'number') {
+          setStars({ 'Xiaoyun-0922/sshops': data.stargazers_count });
+        }
+      })
+      .catch(() => {});
+  }, []);
 
   return (
     <section id="experience" className={styles.experienceSection}>

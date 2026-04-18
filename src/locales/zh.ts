@@ -83,7 +83,7 @@ export const zh: Translations = {
         desc: "面向 Windows 用户的 SSH 一站式运维工具包：一键引导、诊断、传输回退与远程操作，专为 Linux / HPC 工作流设计。",
         github: true,
         repo: "Xiaoyun-0922/sshops",
-        defaultStars: 26,
+        defaultStars: 27,
         githubUrl: "https://github.com/Xiaoyun-0922/sshops"
       },
       {
