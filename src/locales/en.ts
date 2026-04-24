@@ -81,7 +81,7 @@ export const en = {
         desc: "Windows-first SSH bootstrap, diagnostics, transfer fallback, and remote ops toolkit for Linux and HPC workflows.",
         github: true,
         repo: "Xiaoyun-0922/sshops",
-        defaultStars: 27,
+        defaultStars: 85,
         githubUrl: "https://github.com/Xiaoyun-0922/sshops"
       },
       {

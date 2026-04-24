@@ -12,7 +12,10 @@ export default function Experience() {
   const [stars, setStars] = useState<Record<string, number>>({});
 
   useEffect(() => {
-    fetch('https://api.github.com/repos/Xiaoyun-0922/sshops')
+    fetch('https://api.github.com/repos/Xiaoyun-0922/sshops', {
+      cache: 'no-store',
+      headers: { 'Accept': 'application/vnd.github.v3+json' }
+    })
       .then(res => {
         if (!res.ok) throw new Error('rate limited');
         return res.json();
